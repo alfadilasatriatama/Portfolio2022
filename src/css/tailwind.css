@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+    @apply text-xl text-gray-400 font-extrabold font-mono;
+    }
+
+    h5 {
+    @apply text-xs font-serif text-slate-400 sm:text-sm md:text-base;
+    }
+}
+
+@layer components {
+    /* navbar */
+    .header-color {
+        @apply lg:px-16 px-6 bg-inherit flex flex-wrap items-center lg:py-0 py-2;
+    }
+
+    .nav-li {
+        @apply lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 ;
+    }
+
+    /* project */
+    .grid-card {
+        @apply shadow-2xl bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden relative hover:scale-95 transition-all duration-500;
+    }
+
+    .grid-image {
+        @apply w-full h-full bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500;
+    
+    }
+
+    .button-costom {
+        @apply bg-gradient-to-l from-green-600 to-teal-700 text-white hover:from-pink-500 hover:to-yellow-500 rounded-xl uppercase font-semibold tracking-wider text-sm sm:text-base shadow-2xl;
+    }
+    
+}
+
+@layer utilities {
+    #menu-toggle:checked + #menu {
+        display: block;
+    }
+	#toggle:checked ~label div.toggle-circle {
+        @apply translate-x-3; 
+    }
+}
