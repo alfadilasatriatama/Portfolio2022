@@ -7,7 +7,7 @@
 				<h4 class=" text-lg font-bold font-mono text-gray-400  sm:text-2xl "><span class="">Let's work together</span></h4>
 				<div class="pt-9 sm:pt-20 mb-2 sm:mt-10">
 						<h1 class="text-xs mb-2 pl-1">Save a copy of my CV</h1>
-						<object href="file/cv_alfadila_2022.pdf" download="file/cv_alfadila_2022.pdf" class="button-costom inline-block px-5 py-3 ">Download..</object>
+						<object data="file/cv_alfadila_2022.pdf" download="file/cv_alfadila_2022.pdf" class="button-costom inline-block px-5 py-3 ">Download..</object>
 				</div>
 
 				<!-- icon -->
